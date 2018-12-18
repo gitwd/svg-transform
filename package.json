@@ -1,0 +1,24 @@
+{
+  "name": "svg-transform",
+  "version": "1.0.0",
+  "description": "transform svg to svg symbols or iconfont",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitwd/svg-transform.git"
+  },
+  "keywords": [
+    "svg",
+    "symbols",
+    "iconfont"
+  ],
+  "author": "gitwd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitwd/svg-transform/issues"
+  },
+  "homepage": "https://github.com/gitwd/svg-transform#readme"
+}
