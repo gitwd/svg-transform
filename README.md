@@ -1,10 +1,8 @@
 # svg-transform
 transform svg to svg symbols or iconfont
 ## 功能
-------------
 - 将svg文件批量转换为svg symbols或iconfont
 ## 使用
-------------
 ### 全局安装
 - npm i svg-transform -g
 
