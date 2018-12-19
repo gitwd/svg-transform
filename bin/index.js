@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 const path = require('path');
 const program = require('commander');
-const utils = require('../lib/utils')
+const utils = require('../lib/utils');
 
 const {
   symbolsGenerator,
@@ -10,12 +10,10 @@ const {
 
 program
   .version('1.0.0');
-  
 program
   .usage('[options]')
-  .description('select the type of output files')
-  .option('-s, --symbols', 'transform svg to svg symbols')
-  .option('-i, --iconfont', 'transform svg to iconfonts')
+  .option('-t, --type <type>', 'Specify the file type you want', /^(symbols|iconfont|all)$/i, 'all')
+  .option('-c, --configFile [config]', 'config file', './.svgrc.js')
 
 program.unknownOption = function () {
    console.error('Invalid option: %s\nSee --help for a list of available options.', program.args.join(' '));
@@ -24,13 +22,14 @@ program.unknownOption = function () {
 program.parse(process.argv);
 
 const {
-  symbols,
-  iconfont,
+  type,
+  configFile,
 } = program;
-const config = utils.getConfig(path.resolve('./.svgrc.js'));
-if (symbols) {
+
+const config = utils.getConfig(path.resolve(configFile));
+if (type === 'symbols') {
   symbolsGenerator(config);
-} else if (iconfont) {
+} else if (type === 'iconfont') {
   iconfontGenerator(config);
 } else {
   symbolsGenerator(config);

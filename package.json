@@ -5,11 +5,6 @@
   "bin": {
     "svg2icon": "./bin/index.js"
   },
-  "scripts": {
-    "task": "gulp --cwd=./ --gulpfile build/gulpfile.js",
-    "symbols:gen": "npm run task symbols:gen",
-    "iconfont:gen": "npm run task iconfont:gen"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gitwd/svg-transform.git"
