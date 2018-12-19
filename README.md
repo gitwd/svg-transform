@@ -1,10 +1,10 @@
-# svg-transform
+# svg2others
 transform svg to svg symbols or iconfont
 ## 功能
 - 将svg文件批量转换为svg symbols或iconfont
 ## 使用
 ### 全局安装
-- npm i svg-transform -g
+- npm i svg2others -g
 
 ### Options:
 ```
@@ -74,7 +74,7 @@ exports.config = {
 ```
 ## 例子
 ```shell
-$ svg2icon symbols  // 根据配置文件生成svg symbols
+$ svg2icon symbols // 根据配置文件生成svg symbols
 $ svg2icon iconfont // 根据配置文件导出iconfont
 $ svg2icon // 根据配置文件导出svg symbols和iconfont
 ```

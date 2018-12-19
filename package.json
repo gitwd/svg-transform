@@ -1,9 +1,9 @@
 {
-  "name": "svg-transform",
+  "name": "svg2others",
   "version": "1.0.0",
   "description": "transform svg to svg symbols or iconfont",
   "bin": {
-    "svg2icon": "./bin/index.js"
+    "svg2others": "./bin/index.js"
   },
   "repository": {
     "type": "git",
