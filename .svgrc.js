@@ -7,14 +7,13 @@ exports.config = {
    * 输出路径
    */
   docDir: './example/docs',
-
   /**
    * SVG Symbols配置项
    * @type {Object}
    */
   symbols: {
     /**
-     * 指定生成的SVG Symbols输出位置
+     * 指定生成的SVG Symbols输出位置，相对docDir
      * @type {String}
      */
     destPath: 'svg-symbols',
@@ -35,7 +34,7 @@ exports.config = {
    */
   iconfont: {
     /**
-     * 指定iconfont输出位置
+     * 指定iconfont输出位置，相对docDir
      * @type {String}
      */
     destPath: 'iconfont',
