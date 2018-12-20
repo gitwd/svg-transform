@@ -78,11 +78,12 @@
       }
     </style>
     <style>
-      <% _.each( icons, function( icon ){ %><%= icon.className %> {
-        width: <%= icon.width %>;
-        height: <%= icon.height %>;
-        fill: #555;
-      }
+      <% _.each( icons, function(icon){ %>
+        <%= icon.class %> {
+          width: <%= icon.width %>;
+          height: <%= icon.height %>;
+          fill: #555;
+        }
       <%= icon.style %>
       <% }); %>
     </style>
@@ -102,11 +103,13 @@
         <span class="symbol-name"><%= icon.id %></span>
         <div class="symbol-use">
           <span class="symbol-use-title">Usage</span>
-<pre>
-<code><%= _.escape('<svg role="img" class="') %><%= icon.id %><%= _.escape('">') %>
-  <%= _.escape('<use xlink:href="') %><%= icon.filePath %>#<%= icon.id %><%= _.escape('"></use>') %>
-<%= _.escape('</svg>') %></code>
-</pre>
+          <pre>
+            <code>
+              <%= _.escape('<svg role="img" class="') %><%= icon.id %><%= _.escape('">') %>
+              <%= _.escape('<use xlink:href="') %><%= icon.filePath %>#<%= icon.id %><%= _.escape('"></use>') %>
+              <%= _.escape('</svg>') %>
+            </code>
+          </pre>
         </div>
       </li>
       <% }); %>
