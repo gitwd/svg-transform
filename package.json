@@ -1,6 +1,6 @@
 {
   "name": "svg2others",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "transform svg to svg symbols or iconfont",
   "bin": {
     "svg2others": "./bin/index.js"
